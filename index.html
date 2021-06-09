@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+</style>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap" rel="stylesheet">
+  <title>Piano</title>
+</head>
+
+<body>
+  <div id="border">
+    VIRTUAL PIANO
+  </div>
+   <div class="piano">
+     <div data-note="C" class="key white"></div>
+    <div data-note="Db" class="key black"></div>
+    <div data-note="D" class="key white"></div>
+    <div data-note="Eb" class="key black"></div>
+    <div data-note="E" class="key white"></div>
+    <div data-note="F" class="key white"></div>
+    <div data-note="Gb" class="key black"></div>
+    <div data-note="G" class="key white"></div>
+    <div data-note="Ab" class="key black"></div>
+    <div data-note="A" class="key white"></div>
+    <div data-note="Bb" class="key black"></div>
+    <div data-note="B" class="key white"></div>
+  </div>
+
+
+  <audio id="C" src="notes/C.mp3"></audio>
+  <audio id="Db" src="notes/Db.mp3"></audio>
+  <audio id="D" src="notes/D.mp3"></audio>
+  <audio id="Eb" src="notes/Eb.mp3"></audio>
+  <audio id="E" src="notes/E.mp3"></audio>
+  <audio id="F" src="notes/F.mp3"></audio>
+  <audio id="Gb" src="notes/Gb.mp3"></audio>
+  <audio id="G" src="notes/G.mp3"></audio>
+  <audio id="Ab" src="notes/Ab.mp3"></audio>
+  <audio id="A" src="notes/A.mp3"></audio>
+  <audio id="Bb" src="notes/Bb.mp3"></audio>
+  <audio id="B" src="notes/B.mp3"></audio>
+
+
+
+  <button class="color_button" type="button" onclick="myFunction()">Pink</button> <br>
+  <button class="color_button" type="button" onclick="myFunction1()">Green</button> <br>
+  <button class="color_button" type="button" onclick="myFunction2()">Yellow</button> <br>
+  <button class="color_button" type="button" onclick="myFunction3()">Red</button> <br>
+  <button class="color_button" type="button" onclick="myFunction4()">Blue</button>
+
+
+  <script>
+ function myFunction() {
+   document.getElementById("border").style.backgroundColor = "#f5abc9";
+ }
+ </script>
+
+ <script>
+function myFunction1() {
+  document.getElementById("border").style.backgroundColor = "#4aa96c";
+}
+</script>
+
+<script>
+function myFunction2() {
+ document.getElementById("border").style.backgroundColor = "#ffd933";
+}
+</script>
+
+<script>
+function myFunction3() {
+ document.getElementById("border").style.backgroundColor = "#cf0000";
+}
+</script>
+
+<script>
+function myFunction4() {
+ document.getElementById("border").style.backgroundColor = "#3edbf0";
+}
+</script>
+
+
+
+
+  <script src="script.js" defer></script>
+</body>
+</html>
